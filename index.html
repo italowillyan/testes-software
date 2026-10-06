@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Lista de tarefas</h1>
+        <form id="task-form">
+            <label for="task-input">Nova tarefa</label>
+            <div class="form-row">
+                <input id="task-input" type="text" placeholder="Digite uma tarefa" data-cy="task-input">
+                <button type="submit" data-cy="add-button">
+                    Adicionar
+                </button>
+            </div>
+            <p id="error-message" class="error" data-cy="error-message"></p>
+        </form>
+        <p>
+            Total de tarefas:
+            <strong id="task-count" data-cy="task-count">0</strong>
+        </p>
+
+        <button id="remove-all-button" data-cy="remove-all-button">
+            Remover todas
+        </button>
+        
+        <ul id="task-list" data-cy="task-list"></ul>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "testes-software",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server . -p 3000",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/italowillyan/testes-software/issues"
+  },
+  "homepage": "https://github.com/italowillyan/testes-software#readme",
+  "devDependencies": {
+    "cypress": "^16.1.1",
+    "http-server": "^14.1.1"
+  }
+}
